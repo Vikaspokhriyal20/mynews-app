@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title id="demo">News-App</title>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div class="container">
+            <div class="flex-box">
+                <strong>Daily News 📰</strong>
+            </div>
+            <div class="flex-box" id="hide">
+                <ul class="flex">
+                    <li class="nav-item" id="ipl" onclick="onNavitem('ipl')">POLITICS</li>
+                    <li class="nav-item" id="wtc" onclick="onNavitem('wtc')">WTC</li>
+                    <li class="nav-item" id="education" onclick="onNavitem('education')">BUSSINESS</li>
+
+                </ul>
+            </div>
+            <div class="flex-box">
+                <input type="text" name="news" id="input-text">
+                <button id="search-btn">search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- main content -->
+
+    <main id="main">
+        <div class="card-container container flex" id="card-container">
+           
+        </div>
+    </main>
+
+
+    <template id="template-news">
+        <div class="card" id="card">
+            <div class="card-header">
+                <img src="assets/about2.jpg" alt="img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">Hello vikas singh</h3>
+                <h5 id="news-source">india prime 20-06-2023</h5>
+                <p id="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, deleniti? Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Ipsa id rem incidunt aliquid, odit animi doloremque
+                    possimus architecto odio debitis.</p>
+            </div>
+        </div>
+    </template>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

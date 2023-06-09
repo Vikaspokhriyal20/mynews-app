@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Arsenal', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#navbar {
+    background-color:black;
+    color:white;
+    position: fixed;
+    top: 0;
+    z-index: 90;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0  10px lightcoral;
+}
+
+
+.container {
+    width: 80%;
+    padding: 20px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+
+
+.flex-box {
+
+    font-size: 16px;
+
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+
+}
+
+.flex li {
+    list-style: none;
+    transition: all ease;
+    cursor: pointer;
+
+}
+
+.active
+{
+    color:yellow;
+}
+
+#input-text
+{
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    font-size: 16px;
+  
+}
+
+#search-btn
+{
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color:yellow;
+    color:black;
+}
+
+/* this query will be apply from under the 880px width device */
+
+@media screen and (max-width:880px){
+    #hide
+    {
+        display: none;
+
+    }
+    .container
+    {
+        width:100%;
+    }
+}
+
+@media screen and (max-width:500px){
+  
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width:700px){
+  
+    #card-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    #card
+    {
+        width: 80%;
+    }
+  
+}
+
+
+/* end of navbar code */
+
+#main
+{
+    margin-top: 100px;
+    padding-block: 22px;
+
+}
+
+.card-container
+{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card
+{
+    width: 320px;
+    min-height: 350px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius:4px;
+    background-color: #fff;
+    transition: all ease;
+    
+
+}
+
+.card-header img
+{
+width: 100%;
+height: 180px;
+object-fit: cover;
+}
+
+.card:hover
+{
+    transform: translatey(-2px);
+
+}
+
+.card-content
+{
+    padding: 12px;
+
+}
+
+#news-source
+{
+    margin-block: 12px;
+   
+
+}
+
